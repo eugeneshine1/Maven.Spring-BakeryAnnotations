@@ -7,8 +7,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class BakerService {
-    private BakerRepository repository;
     @Autowired
+    private BakerRepository repository;
+
     public BakerService(BakerRepository repository) {
         this.repository = repository;
     }
